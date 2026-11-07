@@ -1,36 +1,26 @@
-# THE NAME — Concept 1A (GitHub Pages ready)
+# THE NAME — Component Pack v1
 
-เว็บไซต์ต้นแบบ **THE NAME** ออกแบบแนว Cinematic Scrollytelling พร้อมหน้าแยกสำหรับแต่ละบริการ
+Open index.html after extracting the entire ZIP. No server, install or internet needed.
+Open standalone-preview.html for a single-file preview including images and audio.
 
-## โครงสร้างเว็บไซต์
-- `index.html` — หน้า Home: ภาพรวมแบรนด์และ 3 เส้นทาง
-- `insight.html` — Full Life Map / Insight 27 หัวข้อ 5 มิติ
-- `ikigai.html` — Ikigai จุดเชื่อมโยง 4 วง
-- `wellness.html` — Facial Ritual, Mantra Yoga, Wellness Experience
-- `assets/css/styles.css` — สไตล์และ responsive
-- `assets/js/app.js` — scroll reveal, active section, mobile navigation
-- `assets/img/` — ภาพหลักที่ใช้งานจริงในเว็บ
-- `assets/img/optional-graphics/` — ภาพประกอบเพิ่มเติมสำหรับพัฒนารุ่นถัดไป (ยังไม่ได้ฝังเข้า HTML)
-- `assets/icons/` — สัญลักษณ์ประกอบ
+## Contents and placement
+- assets/amethyst.png: transparent generated cutout, Insight accent.
+- assets/rose-quartz.png: transparent generated cutout, Ikigai accent.
+- assets/clear-quartz.png: transparent generated cutout, Wellness accent.
+- assets/the-name-signature.svg: editable handwritten path artwork; Home wordmark and scroll sequence.
+- assets/om-symbol.svg: outlined Om glyph, no external font required.
+- assets/components.css + components.js: responsive components, breathing dot-gradient rings and reversible scroll drawing.
+- assets/1107.mp3: user's supplied audio, unchanged.
 
-## ภาพประกอบเพิ่มเติมและตำแหน่งที่แนะนำ
-- `choose-your-path.png`: Home — section **Three Pathways**
-- `full-life-map-dimensions.png`: Insight — section **5 dimensions**
-- `ikigai-four-circles.png`: Ikigai — section **Ikigai Map** (เวอร์ชันเว็บไซต์จริงควรเป็น HTML/SVG ที่กดสำรวจได้)
-- `wellness-journey.png`: Wellness — section **Experience Flow**
-- `signature-experiences.png`: Wellness — section **Service Comparison**
+Stones occupy about 10% of service-page visual composition; Home placement remains flexible. The large stone samples in this component gallery show detail, not final page proportions.
 
-> ภาพประกอบเหล่านี้เป็นภาพนำเสนอที่มีตัวอักษรฝังอยู่ในรูป ควรใช้เพื่ออ้างอิงด้านดีไซน์ หรือแยกข้อความมาทำเป็น HTML ก่อนเผยแพร่จริง เพื่อรองรับมือถือและการเข้าถึง
+Audio starts only after user action. Pause stops audio and dot breathing; restarting resumes the audio. The native player provides volume/seek controls. Audio ending stops breathing. The visual runs an independent gentle eight-second cycle, not audio beat analysis. Reduced-motion preference disables movement, retaining sound controls. Leaving the browser tab pauses audio.
 
-## วิธีอัปโหลด GitHub
-1. สร้าง **New repository** เช่น `the-name-website`
-2. แตก ZIP ก่อน แล้วอัปโหลด **ไฟล์ทั้งหมดที่อยู่ข้างใน** ไปที่ root ของ repository (ต้องให้ `index.html` อยู่ root)
-3. Commit changes ลง `main`
-4. เข้า **Settings > Pages** → **Deploy from a branch** → เลือก `main` / `(root)` และ Save
-5. เปิด URL รูปแบบ `https://USERNAME.github.io/REPOSITORY/`
+This is a component study for integration, not a replacement of the complete website. No changes to the original portrait.
 
-## สถานะ
-- เป็น **Front-end prototype** ยังไม่ใช่ระบบจองจริง
-- ตรวจสอบราคา รายละเอียดบริการ ข้อมูลติดต่อ และความยินยอมใช้ภาพก่อนเผยแพร่
-- ปุ่ม LINE OA ยังต้องใส่ลิงก์ที่ถูกต้องและทดสอบจริง
-- รองรับการพัฒนาต่อด้วย HTML/CSS/JavaScript บน GitHub Pages
+## Generation prompt set
+Built-in image generation; genuine RGBA output verified for each PNG.
+Base: Website decorative cutout asset, one polished natural translucent pebble; photorealistic premium macro studio photograph, three-quarter angle, soft diffuse highlights, realistic mineral texture, whole stone centered with generous padding, elegant organic asymmetric teardrop form, genuine transparent alpha background, no text/symbols/hands/ground plane. Small accent for midnight navy and ivory spiritual wellness website.
+Variants: lavender purple amethyst with crystalline inclusions; blush pink rose quartz with milky inclusions; transparent clear quartz with delicate internal fractures.
+
+SVG signature and motion authored directly as vector/code. Om outline uses installed Noto Sans Devanagari (SIL Open Font License).
