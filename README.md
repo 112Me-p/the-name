@@ -1,26 +1,82 @@
-# THE NAME — Component Pack v1
+# THE NAME — V19 Compact Repo
 
-Open index.html after extracting the entire ZIP. No server, install or internet needed.
-Open standalone-preview.html for a single-file preview including images and audio.
+ชุดสำหรับอัปโหลดผ่านหน้าเว็บ GitHub: รวม CSS ตามลำดับเดิมและตัดเฉพาะไฟล์เก่าที่ไม่ถูกใช้งาน ฟังก์ชันของ V19 คงเดิม
 
-## Contents and placement
-- assets/amethyst.png: transparent generated cutout, Insight accent.
-- assets/rose-quartz.png: transparent generated cutout, Ikigai accent.
-- assets/clear-quartz.png: transparent generated cutout, Wellness accent.
-- assets/the-name-signature.svg: editable handwritten path artwork; Home wordmark and scroll sequence.
-- assets/om-symbol.svg: outlined Om glyph, no external font required.
-- assets/components.css + components.js: responsive components, breathing dot-gradient rings and reversible scroll drawing.
-- assets/1107.mp3: user's supplied audio, unchanged.
+**ทั้งหมด 84 ไฟล์** และ 11 โฟลเดอร์ (ไม่เกิน 100 รายการรวม)
 
-Stones occupy about 10% of service-page visual composition; Home placement remains flexible. The large stone samples in this component gallery show detail, not final page proportions.
+หากเริ่มอัปโหลดชุดเก่าไปแล้ว แนะนำใช้ Repo ว่างสำหรับชุดนี้ เพื่อไม่ให้ไฟล์เก่าค้างปะปน
 
-Audio starts only after user action. Pause stops audio and dot breathing; restarting resumes the audio. The native player provides volume/seek controls. Audio ending stops breathing. The visual runs an independent gentle eight-second cycle, not audio beat analysis. Reduced-motion preference disables movement, retaining sound controls. Leaving the browser tab pauses audio.
 
-This is a component study for integration, not a replacement of the complete website. No changes to the original portrait.
+เว็บไซต์ล่าสุดจากเวอร์ชันที่เผยแพร่ในวันที่ 8 พฤศจิกายน 2569 (2026)
+HTML / CSS / JavaScript แบบ Static ไม่ต้องติดตั้ง Node.js หรือรัน build
 
-## Generation prompt set
-Built-in image generation; genuine RGBA output verified for each PNG.
-Base: Website decorative cutout asset, one polished natural translucent pebble; photorealistic premium macro studio photograph, three-quarter angle, soft diffuse highlights, realistic mineral texture, whole stone centered with generous padding, elegant organic asymmetric teardrop form, genuine transparent alpha background, no text/symbols/hands/ground plane. Small accent for midnight navy and ivory spiritual wellness website.
-Variants: lavender purple amethyst with crystalline inclusions; blush pink rose quartz with milky inclusions; transparent clear quartz with delicate internal fractures.
+## นำไปใส่ Repository และเปิด GitHub Pages
 
-SVG signature and motion authored directly as vector/code. Om outline uses installed Noto Sans Devanagari (SIL Open Font License).
+1. แตกไฟล์ ZIP นี้ก่อน
+2. อัปโหลด **ไฟล์และโฟลเดอร์ภายใน THE-NAME-V19-Compact-Repo** ไปที่ระดับบนสุดของ Repository ให้ `index.html` อยู่ที่ root โดยตรง ไม่ใช่อัปโหลด ZIP ทั้งก้อน
+3. เก็บโครงสร้าง `assets/` และ `en/` ไว้ครบ รวมไฟล์ `.nojekyll`
+4. เปิด Repository → Settings → Pages
+5. เลือก Source: **Deploy from a branch** แล้วเลือก branch **main** และโฟลเดอร์ **/ (root)** จากนั้นกด Save
+6. เปิด URL ที่ GitHub Pages แจ้งเมื่อเผยแพร่เสร็จ
+
+หากอัปโหลดผ่านหน้าเว็บแล้วจำนวนไฟล์มากเกินข้อจำกัด ให้แบ่งอัปโหลดเป็นชุด หรือใช้ GitHub Desktop
+
+## หน้าที่รวมอยู่
+
+| หน้า | ภาษาไทย | ภาษาอังกฤษ |
+| --- | --- | --- |
+| Home | index.html | en/index.html |
+| Insight | insight.html | en/insight.html |
+| Ikigai | ikigai.html | en/ikigai.html |
+| Wellness | wellness.html | en/wellness.html |
+| Contact & Shop | contact-shop.html | en/contact-shop.html |
+
+## ฟังก์ชันและภาพรวม
+
+- Header หยดน้ำ Magnetic Liquid Glass และตัวเลือก TH / EN
+- ภาพ โมเดลไพ่ GLB ล่าสุด เสียงโอม และไลบรารี Three.js ที่ใช้ ถูกเก็บใน assets/
+- ต้นไม้จุดแสงจากรูปอ้างอิง เปลี่ยนเป็นวง Ikigai สี่วงด้วยจุดชุดเดิม
+- รากจาก Hero หน้า Insight พร้อมจุดแสงและแอนิเมชันตามสกรอล
+- Full Life Map ทรงวงกลม และการเลือกภาพ Insight บนมือถือ
+- เอฟเฟกต์ Wellness, ปุ่ม Crystal, ไอคอนเคลื่อนไหว และ Kinetic Typography
+- หน้า Contact & Shop รวมคอร์สและราคาที่มีข้อมูลอยู่แล้ว
+
+## เติมช่องทางติดต่อ
+
+แก้ไฟล์ `assets/config.js` แล้วใส่ URL จริงในช่องต่อไปนี้:
+
+```js
+window.THE_NAME_CONFIG = {
+  lineUrl: '',
+  instagramUrl: '',
+  youtubeUrl: ''
+};
+```
+
+ใช้ URL เต็มที่ขึ้นต้นด้วย https:// เมื่อยังไม่ได้ใส่ลิงก์ ช่องทางนั้นจะแสดงว่ารอเตรียมข้อมูล
+คอร์สที่ยังไม่ทราบราคายังคงแสดง “สอบถามราคา” ไม่มีการเดาราคาเพิ่ม
+
+## ทดลองในเครื่อง
+
+แนะนำให้เปิดผ่านเว็บเซิร์ฟเวอร์ แทนการดับเบิลคลิก HTML เพราะการโหลดโมเดล 3D และ ES modules ต้องใช้ HTTP/HTTPS
+หากมี Python ติดตั้ง ให้เปิด Terminal ในโฟลเดอร์นี้แล้วรัน:
+
+```bash
+python3 -m http.server 8080
+```
+
+จากนั้นเปิด http://localhost:8080/
+เอฟเฟกต์ WebGL ขึ้นอยู่กับเบราว์เซอร์และอุปกรณ์ โดยมีการแสดงผลสำรองตามที่ตั้งไว้ในเว็บเดิม
+เสียงเริ่มเมื่อผู้ใช้กดเล่นตามข้อกำหนดของเบราว์เซอร์ แล้ววนซ้ำจนกดหยุด
+
+## เกี่ยวกับ Shop และข้อมูล
+
+Shop ในชุดนี้เป็นแค็ตตาล็อกบริการและแบบเตรียมข้อความสอบถาม ยังไม่มีตะกร้าสินค้า ระบบรับชำระเงิน หรือระบบยืนยันการจองอัตโนมัติ
+ไม่มี backend หรือฐานข้อมูลที่ต้องย้ายจากแพลตฟอร์มเดิม
+ไม่รวมสิทธิ์เข้าถึงแบบ private ของแพลตฟอร์มเดิม GitHub Pages จะใช้การเข้าถึงตามการตั้งค่าของบัญชีและ Repository ของคุณ
+
+## Source version
+
+Exported from deployed Site V19.
+Source commit: 86080b21c84285754e0e1971227985ba4d6409ef
+ไม่มีข้อมูลรับรองการเข้าถึง ข้อมูล Git ภายใน หรือไฟล์ตั้งค่าเฉพาะโฮสต์เดิมใน ZIP นี้

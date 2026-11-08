@@ -1,0 +1,11 @@
+{
+  "site_version": 19,
+  "source_commit": "86080b21c84285754e0e1971227985ba4d6409ef",
+  "export_date": "2026-11-08",
+  "format": "static HTML/CSS/JS",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "entry": "index.html"
+}
